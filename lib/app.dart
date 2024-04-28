@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
 import "package:flutter_redux/flutter_redux.dart";
-import "package:project/widget.dart";
+import "package:project/tic_tac_toe_board/game.dart";
 import "package:redux/redux.dart";
 import "package:project/app_state.dart";
 
@@ -17,7 +17,7 @@ class App extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
           ),
-          home: const MyWidget(),
+          home: const Game(),
         ),
       );
 }

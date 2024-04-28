@@ -6,6 +6,6 @@ import "package:project/app_state.dart";
 
 void main() {
   final Store<AppState> store =
-      Store<AppState>(reduce, initialState: const AppState.init());
+      Store<AppState>(reducer, initialState: AppState.init());
   runApp(App(store: store));
 }
